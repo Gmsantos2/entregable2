@@ -27,7 +27,7 @@ function App() {
 
   return (
     <main className="flex justify-center items-center h-screen bg-cover
-    bg-[url(bg1.jpg)] bg-center text-white p-2">
+    bg-[url(/imgs/bg1.jpg)] bg-center text-white p-2">
       {
         weather ? <WeatherDetail weather={weather} /> 
         : 
