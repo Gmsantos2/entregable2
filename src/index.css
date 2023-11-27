@@ -1,0 +1,7 @@
+@import url('https://fonts.googleapis.com/css2?family=Fredoka:wght@500&family=Lato:wght@700&display=swap');
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+.texto{
+    text-shadow: 0px 4px 4px rgba(255, 255, 255, 0.25);
+}
