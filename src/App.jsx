@@ -27,8 +27,8 @@ function App() {
 
 
   return (
-    <main className={`flex justify-center items-center h-screen bg-cover
-    bg-[${getBg(weather?.weather[0].icon)}] bg-center text-white p-2`}>  
+    <main className={`flex justify-center items-center h-screen bg-cover 
+    ${getBg(weather?.weather[0].icon)} bg-center text-white p-2`}>  
       {
         weather ?
           (<WeatherDetail weather={weather} />)
