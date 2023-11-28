@@ -1,3 +1,4 @@
+/* eslint-disable no-undef */
 import { useState } from "react";
 
 const WeatherDetail = ({ weather }) => {
@@ -9,7 +10,7 @@ const WeatherDetail = ({ weather }) => {
   
     console.log(weather)
     const CelciusToFarenheit = (tmpCelsius) => {
-        const tempFaren = ((tmpCelsius * (9 / 5)) + 32).toFixed(1);
+        const tempFaren = ((tmpCelsius * (9 / 5)) + 32).toFixed(0);
         return tempFaren;
     }
 
@@ -22,7 +23,7 @@ const WeatherDetail = ({ weather }) => {
                     <h3 className="col-span-3 h-9 text-2xl">{weather.weather[0].description}</h3>
                     {isCelsius ?
                     (
-                        <span className="col-span-2 row-span-3 text-6xl">{weather.main.temp}°C</span>
+                        <span className="col-span-2 row-span-3 text-6xl">{weather.main.temp.toFixed(0)}°C</span>
                     ) : 
                     (
                         <span className="col-span-2 row-span-3 text-6xl">{CelciusToFarenheit(weather.main.temp)}°F</span>  
